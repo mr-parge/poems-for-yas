@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poems for Yas</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-image: url('./images/—Pngtree—pink\ flower\ plant\ floral\ background_280966.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #333;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 20px 0;
+            font-size: 36px;
+            color: #d63384;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        p.subtitle {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .home-button {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background: #d63384;
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .home-button:hover {
+            background: #b5276e;
+            transform: scale(1.05);
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            gap: 10px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: fit-content;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabs button {
+            background: #d63384;
+            border: none;
+            color: white;
+            padding: 14px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .tabs button:hover {
+            background: #b5276e;
+            transform: scale(1.05);
+        }
+
+        .tabs button.active {
+            background: #a01c5c;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            text-align: center;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .tab-content h2 {
+            font-size: 28px;
+            color: #d63384;
+            margin-bottom: 10px;
+        }
+
+        .tab-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+            padding: 10px 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .tabs button {
+                font-size: 14px;
+                padding: 10px 15px;
+            }
+
+            .tab-content h2 {
+                font-size: 24px;
+            }
+
+            .tab-content p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Home Button -->
+    <a href="index.html" class="home-button">Return Home</a>
+
+    <h1>Poems for Yas</h1>
+    <p class="subtitle">A little something to brighten every day of the week</p>
+
+    <div class="tabs">
+        <button class="tablink" onclick="openTab(event, 'Monday')">Monday</button>
+        <button class="tablink" onclick="openTab(event, 'Tuesday')">Tuesday</button>
+        <button class="tablink" onclick="openTab(event, 'Wednesday')">Wednesday</button>
+        <button class="tablink" onclick="openTab(event, 'Thursday')">Thursday</button>
+        <button class="tablink" onclick="openTab(event, 'Friday')">Friday</button>
+        <button class="tablink" onclick="openTab(event, 'Saturday')">Saturday</button>
+        <button class="tablink" onclick="openTab(event, 'Sunday')">Sunday</button>
+    </div>
+
+    <div id="Monday" class="tab-content">
+        <h2>Monday</h2>
+        <p>Even Mondays are bright when you're around,<br>
+        Your smile turns the week's first frown upside down.<br>
+        The start of the week feels less like a chore,<br>
+        Because you bring joy I can’t ignore.<br><br>
+        The world may feel heavy, but you’re my light,<br>
+        Turning the dull into something so bright.<br>
+        With you, Monday’s magic is easy to see,<br>
+        You’re the reason it’s special, at least to me.</p>
+    </div>
+
+    <div id="Tuesday" class="tab-content">
+        <h2>Tuesday</h2>
+        <p>Poem for Tuesday goes here.</p>
+    </div>
+
+    <div id="Wednesday" class="tab-content">
+        <h2>Wednesday</h2>
+        <p>Halfway through, the week feels long,<br>
+            But you push forward, you stay so strong.<br>
+            Even when the world may test,<br>
+            You shine brighter than the rest.<br><br>
+            Your smile’s a light, a midweek spark,<br>
+            Guiding the way when the week feels dark.<br>
+            So take a breath, you’re halfway there,<br>
+            With all you’ve done, nothing compares.</p>
+    </div>
+
+    <div id="Thursday" class="tab-content">
+        <h2>Thursday</h2>
+        <p>Thursday shines, a day so bright,<br>
+            Because of you, it feels just right.<br>
+            All week long, you’ve given your best,<br>
+            Worked so hard, stood out from the rest.<br><br>
+            Your beauty glows, your strength inspires,<br>
+            You light the way, igniting fires.<br>
+            Thursday’s glow is a gift you share,<br>
+            A reminder of how much you care.<br><br>
+            So pause, take pride in the path you pave,<br>
+            You’re beautiful, brilliant, and endlessly brave.</p>
+    </div>
+
+    <div id="Friday" class="tab-content">
+        <h2>Friday</h2>
+        <p>Poem for Friday goes here.</p>
+    </div>
+
+    <div id="Saturday" class="tab-content">
+        <h2>Saturday</h2>
+        <p>Saturday beams with endless light,<br>
+            A day that feels so pure, so right.<br>
+            The week is done, and you can rest,<br>
+            And let your heart feel at its best.<br><br>
+            With every laugh, with every smile,<br>
+            You make the world feel worthwhile.<br>
+            A day for dreams, for all that’s new,<br>
+            Saturday shines because of you.</p>
+    </div>
+
+    <div id="Sunday" class="tab-content">
+        <h2>Sunday</h2>
+        <p>Sundays remind me how lucky I am,<br>
+            To know your heart, to hold your hand.<br>
+            The peace you bring when we talk or just stay,<br>
+            Makes every moment feel like a warm ray.<br><br>
+            There’s no one else who could hold my heart,<br>
+            You’ve had it from the very start.<br>
+            In your presence, the world feels whole,<br>
+            You’ve become the rhythm that soothes my soul.<br><br>
+            You mean so much, more than words can say,<br>
+            My heart is yours every step of the way.</p>
+    </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            const tabContents = document.querySelectorAll('.tab-content');
+            tabContents.forEach(content => content.classList.remove('active'));
+
+            const tabLinks = document.querySelectorAll('.tablink');
+            tabLinks.forEach(link => link.classList.remove('active'));
+
+            document.getElementById(tabName).classList.add('active');
+            evt.currentTarget.classList.add('active');
+        }
+
+        document.querySelector('.tablink').click();
+    </script>
+</body>
+</html>
