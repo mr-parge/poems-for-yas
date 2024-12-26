@@ -19,7 +19,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Allows content to expand if needed */
+            padding-bottom: 20px; /* Adds space below the content */
         }
 
         h1 {
@@ -37,6 +38,23 @@
             background: rgba(255, 255, 255, 0.9);
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            text-align: center;
+        }
+
+        .poem-of-the-day {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+        }
+
+        .poem-of-the-day h2 {
+            font-size: 28px;
+            color: #d63384;
+            margin-bottom: 10px;
         }
 
         a {
@@ -55,6 +73,20 @@
             background: #b5276e;
             transform: scale(1.05);
         }
+
+        .poem-of-the-day p {
+        font-size: 18px;
+        line-height: 1.8; /* Adjusted for better spacing */
+        color: #333;
+        padding: 20px; /* Added padding for visual balance */
+        margin: 0 auto; /* Centers the text */
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 90%; /* Ensures text stays within a readable width */
+        text-align: center; /* Centers the text inside the container */
+        }
+
     </style>
 </head>
 <body>
@@ -65,6 +97,34 @@
         Your strength, your mind, your sweet embrace,<br>
         Forever, you’re my favorite place.
     </p>
+
+    <!-- New Poem Section -->
+    <div class="poem-of-the-day">
+        <h2>My Christmas Angel</h2>
+        <p>
+            This Christmas day, I watched in awe,<br>
+            Your strength, your grace, without a flaw.<br>
+            Amid the rush, the endless tide,<br>
+            You held your kindness deep inside.<br><br>
+            Through every smile, each gentle word,<br>
+            Your care was felt, your heart was heard.<br>
+            The world may have asked so much of you,<br>
+            But you gave your all and stayed so true.<br><br>
+            And even then, you thought of me,<br>
+            A love so rare, like destiny.<br>
+            The medicine you sent my way,<br>
+            Showed love that words could never say.<br><br>
+            You are my world, my light, my star,<br>
+            My heart’s safe place, just as you are.<br>
+            Tonight, as you rest, please always know,<br>
+            I’m proud of you more than I can show.<br><br>
+            You’re my forever, my soul’s sweet song,<br>
+            The love I’ve searched for all along.<br>
+            My Christmas angel, in all you do,<br>
+            Your beauty and strength always shine through.
+        </p>
+    </div>
+
     <a href="week-poems.html">See Week's Poems</a>
 </body>
 </html>
